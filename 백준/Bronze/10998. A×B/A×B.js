@@ -1,13 +1,9 @@
 let fs = require('fs');
 let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
+let number = input[0].split(' ');
 
+let num1 = Number(number[0]);
+let num2 = Number(number[1]);
 
-
-let line = input[0].split(' ');
-
-let a = parseInt(line[0]);
-let b = parseInt(line[1]);
-
-console.log(a * b);
-
+console.log(num1 * num2);
